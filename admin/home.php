@@ -9,7 +9,7 @@ $totalResponses = $Master->getTotalResponses();
 $totalFetched = $Master->getTotalFetched();
 ?>
 
-<h1>Welcome, Administrator Admin!</h1>
+<h1>Welcome, <?php echo $_settings->userdata('firstname')." ".$_settings->userdata('lastname') ?>!</h1>
 <hr>
 <div class="row">
     <div class="col-12 col-sm-6 col-md-6">

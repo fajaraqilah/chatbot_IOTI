@@ -89,14 +89,20 @@
     <script src="http://localhost/chatbot_IOTI/plugins/daterangepicker/daterangepicker.js"></script>
     <!-- Tempusdominus Bootstrap 4 -->
     <script src="http://localhost/chatbot_IOTI/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Summernote -->
-    <script src="http://localhost/chatbot_IOTI/plugins/summernote/summernote-bs4.min.js"></script>
-    <script src="http://localhost/chatbot_IOTI/plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="http://localhost/chatbot_IOTI/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="http://localhost/chatbot_IOTI/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="http://localhost/chatbot_IOTI/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    
+      <!-- Summernote Bootstrap 5 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-bs5.min.css">
+<!-- Summernote Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-bs5.min.js"></script>
+<!-- DataTables Bootstrap 5 JS -->
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap5.min.js"></script>
     <!-- overlayScrollbars -->
-    <!-- <script src="http://localhost/chatbot_IOTI/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script> -->
+    <script src="http://localhost/chatbot_IOTI/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
     <script src="http://localhost/chatbot_IOTI/dist/js/adminlte.js"></script>
 </body>

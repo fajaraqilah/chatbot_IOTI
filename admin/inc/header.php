@@ -7,23 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<title><?php echo $_settings->info('title') != false ? $_settings->info('title').' | ' : '' ?><?php echo $_settings->info('name') ?></title>
     <link rel="icon" href="<?php echo validate_image($_settings->info('logo')) ?>" />
-    <!-- Google Font: Source Sans Pro -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback"> -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/fontawesome-free/css/all.min.css">
-    <!-- Ionicons -->
-    <!-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
-    <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-      <!-- DataTables -->
-  <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
-   <!-- Select2 -->
-  <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/select2/css/select2.min.css">
-  <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+   <!-- Tempus Dominus Bootstrap 4 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" integrity="sha512-3JRrEUwaCkFUBLK1N8HehwQgu8e23jTH4np5NHOmQOobuC4ROQxFwFgBLTnhcnQRMs84muMh0PnnwXlPq5MGjg==" crossorigin="anonymous" />
+<!-- Tempus Dominus Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/@eonasdan/tempus-dominus@6.7.3/dist/js/tempus-dominus.min.js"></script>
+<!-- DataTables Bootstrap 5 CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.bootstrap5.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.bootstrap5.min.css">
+<!-- DataTables Bootstrap 5 JS -->
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap5.min.js"></script>
+
+<!-- Select2 Bootstrap 5 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/css/select2.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap-5-theme@1.2.0/dist/select2-bootstrap-5-theme.min.css">
+<!-- Select2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/js/select2.min.js"></script>
+
+<!-- Custom Styles for Bootstrap 5 Forms -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
     <!-- JQVMap -->
     <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
@@ -33,10 +43,18 @@
     <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
     <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/daterangepicker/daterangepicker.css">
-    <!-- summernote -->
-    <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/summernote/summernote-bs4.min.css">
-     <!-- SweetAlert2 -->
-  <link rel="stylesheet" href="http://localhost/chatbot_IOTI/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+ <!-- Summernote Bootstrap 5 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-bs5.min.css">
+<!-- Summernote Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-bs5.min.js"></script>
+
+
+<!-- SweetAlert2 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
     <style type="text/css">/* Chart.js */
       @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}
     </style>
